@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText">
+    <LinearLayout
+        android:id="@+id/imgmode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/mode"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:background="#303030" />
+
+        <Spinner
+            android:id="@+id/calcModeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/exp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgmode"
+        app:layout_constraintBottom_toTopOf="@id/ans" />
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="textEnd"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/exp"
+        app:layout_constraintBottom_toTopOf="@id/numSysL"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/numSysL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonstable"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <LinearLayout
+            android:id="@+id/hexL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:onClick="onNumSysLayoutClick">
+            <TextView
+                android:id="@+id/hexTV"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text=" HEX   "
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/hex"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/decL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:onClick="onNumSysLayoutClick">
+            <TextView
+                android:id="@+id/decTV"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text=" DEC   "
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/dec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/octL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:onClick="onNumSysLayoutClick">
+            <TextView
+                android:id="@+id/octTV"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text=" OCT   "
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/oct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/binL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:onClick="onNumSysLayoutClick">
+            <TextView
+                android:id="@+id/binTV"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:text=" BIN    "
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/bin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/buttonstable"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/B"
+                android:text="B"
+                android:alpha="0.5" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/A"
+                android:text="A"
+                android:alpha="0.5" />
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/allClear"
+                android:text="AC"
+                android:onClick="prOnAllClearClick" />
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/del"
+                android:text="⌫"
+                android:onClick="prOnDelClick" />
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/div"
+                android:text="/"
+                android:onClick="prOnOperatorClick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/C"
+                android:text="C"
+                android:alpha="0.5" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n7"
+                android:text="7"
+                android:onClick="prOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n8"
+                android:text="8"
+                android:onClick="prOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n9"
+                android:text="9"
+                android:onClick="prOnNumberClick" />
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/mul"
+                android:text="*"
+                android:onClick="prOnOperatorClick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/D"
+                android:text="D"
+                android:alpha="0.5" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n4"
+                android:text="4"
+                android:onClick="prOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n5"
+                android:text="5"
+                android:onClick="prOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n6"
+                android:text="6"
+                android:onClick="prOnNumberClick" />
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/sub"
+                android:text="-"
+                android:onClick="prOnOperatorClick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/E"
+                android:text="E"
+                android:alpha="0.5" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n1"
+                android:text="1"
+                android:onClick="prOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n2"
+                android:text="2"
+                android:onClick="prOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n3"
+                android:text="3"
+                android:onClick="prOnNumberClick" />
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/add"
+                android:text="+"
+                android:onClick="prOnOperatorClick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/F"
+                android:text="F"
+                android:alpha="0.5" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n0"
+                android:text="0"
+                android:onClick="prOnNumberClick" />
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/equal"
+                android:text="="
+                android:onClick="prOnEqualsClick"
+                android:background="@color/blue"
+                android:textColor="@color/white" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Calfinity</string>
+
+    <!-- Calculator Button texts-->
+    <string name="powxy">x<sup><small>y</small></sup></string>
+    <string name="powx1y">x<sup><small>1/y</small></sup></string>
+    <string name="pow10x">10<sup><small>x</small></sup></string>
+    <string name="powex">e<sup><small>x</small></sup></string>
+
+    <!-- Calculator related Arrays-->
+    <string-array name="calcType">
+        <item>Standard</item>
+        <item>Scientific</item>
+    </string-array>
+
+    <string-array name="trigoFuncs">
+        <item>sin</item>
+        <item>cos</item>
+        <item>tan</item>
+        <item>cosec</item>
+        <item>sec</item>
+        <item>cot</item>
+    </string-array>
+
+    <string-array name="funcs">
+        <item>|x|</item>
+        <item>⌊x⌋</item>
+        <item>⌈x⌉</item>
+        <item>exp</item>
+        <item>mod</item>
+        <item>x!</item>
+    </string-array>
+
+    <!-- Convertor related Arrays-->
+    <string-array name="convType">
+        <item>Area</item>
+        <item>Data</item>
+        <item>Length</item>
+        <item>Mass</item>
+        <item>Number System</item>
+        <item>Speed</item>
+        <item>Temperature</item>
+        <item>Time</item>
+        <item>Volume</item>
+    </string-array>
+
+    <string-array name="Area">
+        <item>Square millimetres</item>
+        <item>Square centimetres</item>
+        <item>Square metres</item>
+        <item>Square kilometres</item>
+        <item>Square inches</item>
+        <item>Square feet</item>
+        <item>Square miles</item>
+        <item>Acres</item>
+    </string-array>
+    <string-array name="Data">
+        <item>Bits</item>
+        <item>Bytes</item>
+        <item>Kilobits</item>
+        <item>Kilobytes</item>
+        <item>Megabits</item>
+        <item>Megabytes</item>
+        <item>Gigabits</item>
+        <item>Gigabytes</item>
+    </string-array>
+    <string-array name="Length">
+        <item>Nanometres</item>
+        <item>Microns</item>
+        <item>Millimetres</item>
+        <item>Centimetres</item>
+        <item>Metres</item>
+        <item>Kilometres</item>
+        <item>Inches</item>
+        <item>Feet</item>
+        <item>Miles</item>
+    </string-array>
+    <string-array name="Mass">
+        <item>Milligrams</item>
+        <item>Centigrams</item>
+        <item>Grams</item>
+        <item>Kilograms</item>
+        <item>Pounds</item>
+        <item>Metric tonnes</item>
+    </string-array>
+    <string-array name="NumberSystem">
+        <item>Bin</item>
+        <item>Oct</item>
+        <item>Dec</item>
+        <item>Hex</item>
+    </string-array>
+    <string-array name="Speed">
+        <item>Metres per second</item>
+        <item>Kilometres per hour</item>
+        <item>Miles per hour</item>
+        <item>Knots</item>
+        <item>Mach</item>
+    </string-array>
+    <string-array name="Temperature">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+    <string-array name="Time">
+        <item>Microseconds</item>
+        <item>Milliseconds</item>
+        <item>Seconds</item>
+        <item>Minutes</item>
+        <item>Hours</item>
+        <item>Days</item>
+        <item>Weeks</item>
+        <item>Years</item>
+    </string-array>
+    <string-array name="Volume">
+        <item>Millilitres</item>
+        <item>Litres</item>
+        <item>Cubic centimetres</item>
+        <item>Cubic metres</item>
+        <item>Cubic inches</item>
+        <item>Cubic feet</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="HardcodedText">
+
+    <TableLayout
+        android:id="@+id/buttonstable"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/allClear"
+                android:text="AC"
+                android:onClick="stOnAllClearClick" />
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/del"
+                android:text="⌫"
+                android:onClick="stOnDelClick" />
+
+            <Button
+                style="@style/operatorButton"/>
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/div"
+                android:text="/"
+                android:onClick="stOnOperatorClick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n7"
+                android:text="7"
+                android:onClick="stOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n8"
+                android:text="8"
+                android:onClick="stOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n9"
+                android:text="9"
+                android:onClick="stOnNumberClick" />
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/mul"
+                android:text="*"
+                android:onClick="stOnOperatorClick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n4"
+                android:text="4"
+                android:onClick="stOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n5"
+                android:text="5"
+                android:onClick="stOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n6"
+                android:text="6"
+                android:onClick="stOnNumberClick" />
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/sub"
+                android:text="-"
+                android:onClick="stOnOperatorClick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n1"
+                android:text="1"
+                android:onClick="stOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n2"
+                android:text="2"
+                android:onClick="stOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n3"
+                android:text="3"
+                android:onClick="stOnNumberClick" />
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/add"
+                android:text="+"
+                android:onClick="stOnOperatorClick" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/decpt"
+                android:text="."
+                android:onClick="stOnNumberClick" />
+
+            <Button
+                style="@style/numberButton"
+                android:id="@+id/n0"
+                android:text="0"
+                android:onClick="stOnNumberClick" />
+
+            <Button
+                style="@style/operatorButton"
+                android:id="@+id/equal"
+                android:text="="
+                android:onClick="stOnEqualsClick"
+                android:background="@color/blue"
+                android:textColor="@color/white" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

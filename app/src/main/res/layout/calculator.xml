@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/imgmode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/mode"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:background="#303030" />
+
+        <Spinner
+            android:id="@+id/calcModeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/exp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="textEnd"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textAlignment="textEnd"
+        android:textSize="40sp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/modeFrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
